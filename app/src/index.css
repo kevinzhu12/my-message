@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pinned-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.pinned-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Make emojis larger in text inputs */
+.emoji-text {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.emoji-text::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #9ca3af;
+}
+
+/* Make emojis larger in messages */
+.message-emoji {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  display: inline-block;
+}

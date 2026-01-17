@@ -1,0 +1,10 @@
+# General
+.DS_Store
+*.log
+
+# IDEs
+.idea/
+*.swp
+*.swo
+
+docs/

@@ -1,0 +1,27 @@
+[package]
+name = "imessage-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["ws"] }
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.5", features = ["cors"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.31", features = ["bundled"] }
+chrono = "0.4"
+urlencoding = "2.1"
+# File watching
+notify = "6.1"
+notify-debouncer-mini = "0.4"
+# WebSocket support (futures for async streams)
+futures = "0.3"
+async-stream = "0.3"
+# HTTP client for OpenRouter API
+reqwest = { version = "0.11", features = ["json", "stream"] }
+r2d2 = "0.8"
+r2d2_sqlite = "0.24"
+dotenvy = "0.15"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
